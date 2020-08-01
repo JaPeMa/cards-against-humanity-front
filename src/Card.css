@@ -1,0 +1,31 @@
+.card-container {
+    height: 14rem;
+    width: 10rem;
+    border-radius: 1rem;
+    border: 1px solid white;
+    background-color: rgba(12,12,12,1);
+    color: white;
+    margin: -1rem;
+    transition: .2s;
+}
+
+.card-container:hover {
+    transform: translateY(-3rem) scale(1.3);
+}
+.card-text {
+    text-align: center;
+    /*position: absolute;*/
+    margin: 2rem auto auto;
+}
+
+.move-to-center {
+    animation: move-animation 1s;
+}
+@keyframes move-animation {
+    from {}
+    to {
+        top: 50px;
+        position: absolute;
+        margin: auto;
+    }
+}
